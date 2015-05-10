@@ -187,10 +187,7 @@ namespace VisualProgrammingProject
 
 
 
-        private void GameWindow_MouseClick(object sender, MouseEventArgs e)
-        {
-            player = new Player(e.Location.X, e.Location.Y);
-        }
+        
 
         private void GameWindow_KeyPress(object sender, KeyPressEventArgs e)
         {
