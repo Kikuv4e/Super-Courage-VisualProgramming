@@ -1,0 +1,9 @@
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\bin\Debug\VisualProgrammingProject.exe.config
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\bin\Debug\VisualProgrammingProject.exe
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\bin\Debug\VisualProgrammingProject.pdb
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.csprojResolveAssemblyReference.cache
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.GameWindow.resources
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.Properties.Resources.resources
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.csproj.GenerateResource.Cache
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.exe
+c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.pdb
