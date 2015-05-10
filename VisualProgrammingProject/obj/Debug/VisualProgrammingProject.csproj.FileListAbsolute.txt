@@ -16,3 +16,6 @@ C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgramming
 C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.GameWindow.resources
 C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.Properties.Resources.resources
 C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.csproj.GenerateResource.Cache
+C:\Users\Kiko\Desktop\Super-Courage-VisualProgramming\VisualProgrammingProject\bin\Debug\VisualProgrammingProject.exe.config
+C:\Users\Kiko\Desktop\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.exe
+C:\Users\Kiko\Desktop\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.pdb
