@@ -7,6 +7,7 @@ using System.Drawing;
 
 namespace VisualProgrammingProject
 {
+    // All clouds are in this class
     class CloudDocs
     {
         private int width;
