@@ -29,7 +29,9 @@ namespace VisualProgrammingProject
         private Point point;
         private SignIn signInForm;
         private GameWindow game;
-
+        private Image button2;
+        private int width3;
+        private int height3;
 
 
         public Menu()
@@ -40,6 +42,7 @@ namespace VisualProgrammingProject
             Invalidate();
             button = Properties.Resources.clouds1;
             button1 = Properties.Resources.clouds1;
+            button2 = Properties.Resources.clouds1;
             dog = Properties.Resources.warrior_courage_by_gth089_d4gxbg2;
             trophey = Properties.Resources.trophey;
             DoubleBuffered = true;
@@ -48,6 +51,8 @@ namespace VisualProgrammingProject
             height1 = 100;
             width2 = 250;
             height2 = 100;
+            width3 = 250;
+            height3 = 100;
             font = 18;
             signInForm = new SignIn();
             point = System.Windows.Forms.Cursor.Position;
@@ -66,6 +71,7 @@ namespace VisualProgrammingProject
 
             g.DrawImage(this.button, 170 - (width1 / 2), 100 - (height1 / 2), width1, height1);
             g.DrawImage(this.button1, 170 - (width2 / 2), 200 - (height2 / 2), width2, height2);
+            g.DrawImage(this.button2, 370 - (width3 / 2), 300 - (height3 / 2), width3, height3);
             g.DrawImage(this.dog, 20, 250, 250, 300);
             g.DrawImage(this.treasure, 580, 110, 80, 70);
             g.DrawImage(this.trophey, 560, 480, 45, 65);
@@ -88,6 +94,7 @@ namespace VisualProgrammingProject
             string score = "High score";
             PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile("SHOWG.TTF");
+            string howtoplay = "How to play";
 
             System.Drawing.Font drawFont = new System.Drawing.Font(pfc.Families[0], 18, FontStyle.Regular);
             System.Drawing.Font drawFont1 = new System.Drawing.Font(pfc.Families[0], font);
@@ -99,6 +106,8 @@ namespace VisualProgrammingProject
             formGraphics.DrawString(drawString, drawFont, drawBrush, 90, 80, drawFormat);
             formGraphics.DrawString(drawString1, drawFont, drawBrush, 120, 180, drawFormat);
             formGraphics.DrawString(score, drawFont1, drawBrush1, 610, 500, drawFormat);
+            drawFont = new System.Drawing.Font(pfc.Families[0], 14, FontStyle.Regular);
+            formGraphics.DrawString(howtoplay, drawFont, drawBrush, 285, 285, drawFormat);
             drawFont.Dispose();
             drawBrush.Dispose();
             drawBrush1.Dispose();
@@ -141,6 +150,10 @@ namespace VisualProgrammingProject
             else if (point.X > 50 && point.X < 300 && point.Y > 160 && point.Y < 250)
             {
                 Application.Exit();
+            }else if (point.X > 225 && point.X < 225 + 250 && point.Y > 260 && point.Y < 360)
+            {
+                string s = "How to play?\nYour goal is to collect as much as possible coins and to stay longer alive.\nPress the arrows of the keyboard to move Courage between the clouds and to avoid the dangers (bombs and the bird).\nFor Courage to jump press the Upper arrow (or key W) and navigate right and left with the corresponding arrows (or keys A and D).\nTo exit out of the game press the ESC button.";
+                MessageBox.Show(s, "How to play", MessageBoxButtons.OK);
             }
             else if (point.X > 610 && point.X < 700 && point.Y > 500 && point.Y < 550)
             {
@@ -165,6 +178,8 @@ namespace VisualProgrammingProject
                 this.height1 = 120;
                 width2 = 250;
                 height2 = 100;
+                width3 = 250;
+                height3 = 100;
             }
             else if (point.X > 50 && point.X < 300 && point.Y > 160 && point.Y < 250)
             {
@@ -172,10 +187,21 @@ namespace VisualProgrammingProject
                 this.height2 = 120;
                 width1 = 250;
                 height1 = 100;
+                width3 = 250;
+                height3 = 100;
             }
             else if (point.X > 610 && point.X < 700 && point.Y > 500 && point.Y < 550)
             {
                 this.font = 20;
+            }
+            else if (point.X > 225 && point.X < 225 + 250 && point.Y > 260 && point.Y < 360)
+            {
+                this.width2 = 250;
+                this.height2 = 100;
+                width1 = 250;
+                height1 = 100;
+                width3 = 270;
+                height3 = 120;
             }
             else
             {
@@ -184,7 +210,8 @@ namespace VisualProgrammingProject
                 this.width2 = 250;
                 this.height2 = 100;
                 font = 18;
-
+                width3 = 250;
+                height3 = 100;
             }
             Invalidate();
         }
