@@ -160,6 +160,7 @@ namespace VisualProgrammingProject
             }
             else
             {
+                pressedWhileUp = true;
                 int direction = directionMove < 0 ? -1 : 1;
                 y = (int)(rememberPosition.Y - radiusY * Math.Sin(currentAngle));
                 x = (int)(rememberPosition.X - direction * radiusX * Math.Cos(currentAngle)) + (direction  * 15);
