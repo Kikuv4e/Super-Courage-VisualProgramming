@@ -14,6 +14,7 @@ namespace VisualProgrammingProject
 {
     public partial class Menu : Form
     {
+        // Variable Declaration
         private Image button;
         private Image button1;
         private Image dog;
@@ -32,7 +33,7 @@ namespace VisualProgrammingProject
         private Image button2;
         private int width3;
         private int height3;
-
+        //Variable declaration end
 
         public Menu()
         {
