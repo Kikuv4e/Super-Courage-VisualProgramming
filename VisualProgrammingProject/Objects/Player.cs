@@ -42,6 +42,7 @@ namespace VisualProgrammingProject
         private double currentAngle;
         private bool checkIfUp;
         private bool killPlayer;
+        private bool pressedWhileUp;
         public static int playerVelocity;
         public bool leftPress { get; set; }
         public bool rightPress { get; set; }
@@ -148,10 +149,11 @@ namespace VisualProgrammingProject
             moveLeftRight.Stop();
             currentAngle = 0;
             isUp = false;
+            pressedWhileUp = false;
         }
         public void toJump_Tick(Object sender, EventArgs e)
         {
-            if (!checkIfUp)
+            if (!checkIfUp && !leftPress && !rightPress && !pressedWhileUp) 
             {
                 if (y <= jumpLimit) stopJump();
                 y -= velocity;
@@ -199,11 +201,33 @@ namespace VisualProgrammingProject
             if (this.animateDeathCheck) return;
             if (!leftPress && direction == DIRECTION.left)
             {
+                if (isUp && pressedWhileUp) return;
                 leftPress = true;
+                directionMove = -velocity;
+                if (isUp)
+                {
+                    pressedWhileUp = true;
+                    int direction1 = directionMove < 0 ? -1 : 1;
+                    rememberPosition.X = x + direction1*radiusX;
+                    rememberPosition.Y = y;
+                    y = (int)(rememberPosition.Y - radiusY * Math.Sin(currentAngle));
+                    x = (int)(rememberPosition.X - direction1 * radiusX * Math.Cos(currentAngle)) + (direction1 * 15);
+                }
             }
             if (!rightPress && direction == DIRECTION.right)
             {
+                if (isUp && pressedWhileUp) return;
                 rightPress = true;
+                directionMove = velocity;
+                if (isUp)
+                {
+                    pressedWhileUp = true;
+                    int direction1 = directionMove < 0 ? -1 : 1;
+                    rememberPosition.X = x + direction1*radiusX;
+                    rememberPosition.Y = y;
+                    y = (int)(rememberPosition.Y - radiusY * Math.Sin(currentAngle));
+                    x = (int)(rememberPosition.X - direction1 * radiusX * Math.Cos(currentAngle)) + (direction1 * 15);
+                }
             }
             
             if (direction == DIRECTION.left && !isUp)
