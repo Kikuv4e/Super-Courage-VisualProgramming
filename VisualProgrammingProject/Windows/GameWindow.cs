@@ -109,6 +109,26 @@ namespace VisualProgrammingProject
             this.backGroundMusic.Stop();
             this.Close();
         }
+        public void gameOverDeath()
+        {
+            this.scoreTimer.Stop();
+            gameOver = true;
+            DialogResult dialogResult = MessageBox.Show("Game Over! Would you like to continue to play?", "Game Over!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.scoreTimer.Start();
+                this.playerScorePoints = 0;
+                player = new Player(this.Width / 2, -1800);
+                gameOver = false;
+                
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                this.DialogResult = System.Windows.Forms.DialogResult.OK;
+                this.backGroundMusic.Stop();
+                this.Close();
+            }
+        }
         void movingTimer_Tick(Object sender, EventArgs e)
         {
             bool isAlive;
@@ -117,29 +137,17 @@ namespace VisualProgrammingProject
                 bird.move();
                 if (bird.checkIfCollide(player.getLocation()) && !gameOver)
                 {
-                    this.scoreTimer.Stop();
-                    gameOver = true;
                     player.animateDeath();
-                    this.DialogResult = System.Windows.Forms.DialogResult.OK;
-                    MessageBox.Show("You lost please try again");
-
-                    this.backGroundMusic.Stop();
-                    this.Close();
+                    gameOverDeath();
                 }
             }
 
             if (player != null)
                 if (player.y > this.Height && !this.gameOver)
                 {
-                    this.scoreTimer.Stop();
-                    gameOver = true;
-                    this.DialogResult = System.Windows.Forms.DialogResult.OK;
-                    MessageBox.Show("You lost please try again");
-
-                    this.backGroundMusic.Stop();
-                    this.Close();
+                    gameOverDeath(); 
                 }
-            if (player != null )
+            if (player != null)
             {
                 bool t = (rectangles.checkIfCollide(player.getLocation(), player.getHeight(), player.getWidth(), out isAlive, ref playerScore));
 
@@ -218,7 +226,7 @@ namespace VisualProgrammingProject
                 gameOverFunct();
                 this.Close();
             }
-            
+
             if (player == null) return;
             if (e.KeyCode == Keys.W || e.KeyCode == Keys.Up)
             {
