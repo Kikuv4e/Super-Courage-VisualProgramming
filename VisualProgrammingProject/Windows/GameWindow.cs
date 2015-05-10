@@ -218,8 +218,12 @@ namespace VisualProgrammingProject
                 gameOverFunct();
                 this.Close();
             }
+            
             if (player == null) return;
-
+            if (e.KeyCode == Keys.W || e.KeyCode == Keys.Up)
+            {
+                player.stopJump();
+            }
             if (e.KeyCode == Keys.A || e.KeyCode == Keys.Left)
             {
                 player.leftPress = false;
