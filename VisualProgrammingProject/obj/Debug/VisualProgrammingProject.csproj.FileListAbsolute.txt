@@ -7,3 +7,12 @@ c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\Vis
 c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.csproj.GenerateResource.Cache
 c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.exe
 c:\users\kiko\documents\visual studio 2013\Projects\VisualProgrammingProject\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.pdb
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\bin\Debug\VisualProgrammingProject.exe.config
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.exe
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.pdb
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\bin\Debug\VisualProgrammingProject.exe
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\bin\Debug\VisualProgrammingProject.pdb
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.csprojResolveAssemblyReference.cache
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.GameWindow.resources
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.Properties.Resources.resources
+C:\Users\Kiko\Documents\GitHub\Super-Courage-VisualProgramming\VisualProgrammingProject\obj\Debug\VisualProgrammingProject.csproj.GenerateResource.Cache
