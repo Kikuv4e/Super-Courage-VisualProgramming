@@ -203,6 +203,7 @@ namespace VisualProgrammingProject
             if (!leftPress && direction == DIRECTION.left)
             {
                 if (isUp && pressedWhileUp) return;
+                this.playerImage = this.leftImage;
                 leftPress = true;
                 directionMove = -velocity;
                 if (isUp)
@@ -219,6 +220,7 @@ namespace VisualProgrammingProject
             {
                 if (isUp && pressedWhileUp) return;
                 rightPress = true;
+                this.playerImage = this.rightImage;
                 directionMove = velocity;
                 if (isUp)
                 {
